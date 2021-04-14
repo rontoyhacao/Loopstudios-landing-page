@@ -1,0 +1,23 @@
+html {
+    font-size: 15px;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Alata', sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.wide-container {
+    width: 88%;
+    margin: 0 auto;
+    max-width: 69rem;
+}
