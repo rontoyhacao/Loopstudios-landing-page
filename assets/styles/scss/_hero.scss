@@ -1,5 +1,6 @@
 .hero-image {
     background: url(/assets/images/mobile/image-hero.jpg) no-repeat;
+    background-position: center;
     background-size: cover;
     height: 43.25rem;
     display: flex;
@@ -18,5 +19,35 @@
 @media screen and (max-width: 360px) {
     .hero-image .hero-text h1 {
         font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-image {
+        background: url(/assets/images/desktop/image-hero.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        .hero-image-overlay {
+            background: rgba(0, 0, 0, 0.4);
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            .hero-text h1 {
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero-image .hero-image-overlay .hero-text {
+        width: 60%;
+        padding: 2.5rem;
+        position: relative;
+        top: 2.75rem;
+        h1 {
+            font-size: 4.5rem;
+        }
     }
 }

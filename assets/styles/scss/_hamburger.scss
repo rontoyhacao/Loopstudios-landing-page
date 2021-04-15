@@ -43,6 +43,7 @@
                     font-size: 1.5rem;
                     font-family: 'Josefin Sans', sans-serif;
                     text-transform: uppercase;
+                    display: inline-block;
                 }
             }
         }
@@ -50,4 +51,56 @@
 }
 .open {
     left: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-links {
+        padding: 2.5rem 2.5rem;
+        nav ul li a {
+            font-size: 3rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hamburger-btn {
+        display: none;
+    }
+    .nav-links {
+        left: initial;
+        position: initial;
+        top: initial;
+        transition: left .3s ease;
+        height: initial;
+        width: initial;
+        display: initial;
+        flex-direction: initial;
+        // justify-content: center;
+        align-items: initial;
+        background: initial;
+        padding: initial;
+        z-index: initial;
+        .nav-links-header {
+            display: none;
+        }
+        nav {
+            transform: initial;
+            ul {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                li {
+                    margin: 0 1.25rem;
+                    a {
+                        font-size: 1rem;
+                        text-transform: initial;
+                        font-family: 'Alata', sans-serif;
+                    }
+                    &:last-of-type {
+                        margin: 0 0 0 1.25rem;
+                    }
+                }
+            }
+        }
+    }
 }

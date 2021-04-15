@@ -19,5 +19,23 @@ h4 {
 .wide-container {
     width: 88%;
     margin: 0 auto;
-    max-width: 69rem;
+    max-width: 74rem;
+}
+.slider-hover {
+    position: relative;
+    &::after {
+        content: "";
+        background-color: $White;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        top: 110%;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.3s ease;
+        width: 100%;
+    }
+    &:hover::after {
+        transform: scaleX(1);
+    }
 }

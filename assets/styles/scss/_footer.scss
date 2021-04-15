@@ -46,3 +46,44 @@
         color: hsl(228, 45%, 44%); 
     }
 }
+
+.attribution--desktop {
+    display: none;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        text-align: initial !important;
+        display: flex;
+        justify-content: space-between;
+        .footer-lower {
+            text-align: right;
+            .social-links {
+                justify-content: flex-end !important;
+            }
+        }
+    }
+    .footer-links {
+        display: flex;
+        margin: 1rem 0 0 0 !important;
+        li {
+            margin: 0 .5rem !important;
+            &:first-of-type {
+                margin-left: 0 !important;
+            }
+        }
+    }
+    .attribution {
+        display: none;
+    }
+    .attribution--desktop {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer-links li {
+        margin: 0 1.25rem;
+    }
+}

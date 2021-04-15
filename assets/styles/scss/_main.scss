@@ -13,6 +13,9 @@
             }
         }
     }
+    .section-padding--top .creations-header .creation-see-all {
+        display: none;
+    }
     .creations-header {
         text-align: center;
     }
@@ -25,4 +28,63 @@ h2,
 h3 {
     font-size: 2.15rem;
     font-weight: initial;
+}
+.desktop-interactive {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-interactive {
+        display: none;
+    }
+    .desktop-interactive {
+        display: initial;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    h2,
+    h3 {
+        font-size: 3.25rem;
+    }
+    .main-padding {
+        padding: 10.75rem 0;
+    }
+    .desktop-interactive {
+        width: initial;
+    }
+    .section-padding--bottom {
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 12.25rem !important;
+        .interactive-content {
+            padding: 6rem 0 0 6rem !important;
+            margin-left: -14rem;
+            background: $White;
+            min-height: 19rem;
+            text-align: initial !important;
+            p {
+                padding: 0 !important;
+                margin: 2rem 0 0 !important;
+            }
+        }
+    }
+    .section-padding--top {
+        .creations-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .creation-see-all {
+                display: initial !important;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1265px) {
+    .section-padding--bottom .interactive-content {
+        margin-left: -10.75rem;
+    }
 }
