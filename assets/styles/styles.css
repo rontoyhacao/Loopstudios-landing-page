@@ -154,6 +154,72 @@ header .header-container a img {
   outline: none;
 }
 
+.hamburger-btn--close {
+  background: url(/assets/images/icon-close.svg) no-repeat;
+  background-position: center;
+}
+
+.nav-links {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  -webkit-transition: left .3s ease;
+  transition: left .3s ease;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: black;
+  padding: 2.5rem 1.5rem;
+  z-index: 9;
+}
+
+.nav-links .nav-links-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.nav-links nav {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.nav-links nav ul {
+  list-style: none;
+}
+
+.nav-links nav ul li {
+  margin-bottom: 1.5rem;
+}
+
+.nav-links nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+.open {
+  left: 0;
+}
+
 .main-padding {
   padding: 6.25rem 0;
 }
