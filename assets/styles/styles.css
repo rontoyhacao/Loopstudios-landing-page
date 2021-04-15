@@ -256,6 +256,9 @@ header .header-container a img {
 }
 
 @media screen and (min-width: 1024px) {
+  .hero-image {
+    background-position: initial;
+  }
   .hero-image .hero-image-overlay .hero-text {
     width: 60%;
     padding: 2.5rem;

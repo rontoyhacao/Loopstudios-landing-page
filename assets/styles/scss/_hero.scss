@@ -41,13 +41,16 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .hero-image .hero-image-overlay .hero-text {
-        width: 60%;
-        padding: 2.5rem;
-        position: relative;
-        top: 2.75rem;
-        h1 {
-            font-size: 4.5rem;
+    .hero-image {
+        background-position: initial;
+        .hero-image-overlay .hero-text {
+            width: 60%;
+            padding: 2.5rem;
+            position: relative;
+            top: 2.75rem;
+            h1 {
+                font-size: 4.5rem;
+            }
         }
     }
 }
